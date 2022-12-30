@@ -61,15 +61,15 @@ function FavouriteProductsPage() {
 
             <div className="row">
                 <div className="col-lg-8">
-                    <div className=" p-2 search-form row">
-                        <div className=" col-lg-10">
-                            <input className="form-control" type="text" value={searchValue} onChange={(e)=>{searchSuggestionHandler(e.target.value); setSearchValue(e.target.value)}} />
-                            {suggestions.map(
-                                    s=><button class="dropdown-item" type="button" key={s._id} onClick={(e)=>{setSearchValue(s.name);setSuggestions([])}} >{s.name}</button>
-                            )}
+                <div className=" p-2 search-form row ">
+                        <div className=" col-lg-10 ">
+                            <input className="form-control " type="text" value={searchValue} onChange={(e)=>{searchSuggestionHandler(e.target.value); setSearchValue(e.target.value)}} />
+                            
                         </div>
-                        <div className=" col-lg-2" >
-                            <button className="btn search-btn" onClick={()=>window.location.href='/search'} ><i class="fa fa-search"></i> Search</button>
+                        <div className=" col-lg-2 d-flex align-items-center justify-content-center"  >
+                            <button className="btn search-btn pr-4 pl-4 mr-2"
+                                onClick={(e)=>navigate('/search',{state:{searchValue:searchValue}})}
+                            ><i class="fa fa-search"></i> Search</button>
                         </div>
                     </div>
                 </div>
@@ -78,6 +78,11 @@ function FavouriteProductsPage() {
                         <button className="btn btn-blue mr-3" onClick={(e)=> window.location.href = '/addNewProduct'} > New Product</button>
                         <button className="btn icon-btn-blue"><i class="fa fa-star"></i></button>
                     </div>
+                </div>
+                <div className="col-lg-4 search-drop-down">
+                    {suggestions.map(
+                        s=><button class="dropdown-item" type="button" key={s._id} onClick={(e)=>{setSearchValue(s.name);setSuggestions([])}} >{s.name}</button>
+                    )}
                 </div>
             </div>
 

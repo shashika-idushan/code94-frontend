@@ -24,14 +24,6 @@ function UpdateProductPage() {
         }
     }, [user, navigate, dispatch])
 
-    useEffect(() => {
-        if (isSuccess) { 
-            alert("Product Added Successfully")
-        } 
-    }, [isSuccess])
-
-
-
     const [sku, setSku] = useState(product.sku);
     const [price, setPrice] = useState(product.price);
     const [name, setName] = useState(product.name);

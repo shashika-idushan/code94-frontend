@@ -32,8 +32,8 @@ function DeleteButton({product}) {
                                 <h6>You will not be able to undo this action if you proceed!</h6>
                             </div>
                             <div className="row d-flex align-items-center justify-content-center mt-3">
-                                <button className='btn m-1' data-dismiss="modal">Cancel</button>
-                                <button className='btn m-1' data-dismiss="modal" onClick={() => dispatch(deleteProducts(product._id))} >Delete</button>
+                                <button className='btn m-1 btn-blue-outline' data-dismiss="modal">Cancel</button>
+                                <button className='btn m-1 btn-blue' data-dismiss="modal" onClick={() => dispatch(deleteProducts(product._id))} >Delete</button>
                             </div>
                     </div>
                 </div>

@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-// const API_URL = '/api/users/'
 // const API_URL = 'http://localhost:8090/api/user/'
 const API_URL = 'https://code94-app.herokuapp.com/api/user/'
 

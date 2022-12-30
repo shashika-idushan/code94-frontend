@@ -32,6 +32,15 @@ h2 {
     padding: 10px 50px;
 }
 
+.btn-blue-outline {
+    background-color: white;
+    padding: 10px 50px;
+    border-style: solid;
+    border-color: #001eb9;
+    border-width: 2px;
+    
+}
+
 .icon-btn-blue {
     border-color: #001eb9;
     color: #001eb9;
@@ -80,4 +89,9 @@ h2 {
 .grey-sm-text {
     color: #969191;
     font-size: smaller;
+}
+
+
+.search-drop-down {
+    z-index: 1;
 }
