@@ -1,0 +1,83 @@
+h2 {
+    cursor: pointer;
+}
+
+.search-form {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+}
+
+.search-form input {
+    border-style: none;
+    background-color: #f7f7f7;
+}
+
+.search-btn {
+    background-color: #001eb9;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.search-btn :hover {
+    color: white;
+    padding: auto 50%;
+}
+
+
+
+.btn-blue {
+    background-color: #001eb9;
+    color: white;
+    padding: 10px 50px;
+}
+
+.icon-btn-blue {
+    border-color: #001eb9;
+    color: #001eb9;
+    background-color: white;
+}
+
+
+.product-table-header {
+    color: #001eb9;
+}
+
+
+.icon-btn {
+    background-color: white;
+    border-style: none;
+    color: blue;
+}
+
+.product-form input {
+    border-style: none;
+    background-color: #f7f7f7;
+}
+
+.product-form textarea {
+    border-style: none;
+    background-color: #f7f7f7;
+}
+
+
+.image-box {
+    background-color: #f7f7f7;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.image-box label{
+    cursor: pointer;
+}
+
+
+.custom-form label {
+    font-weight: bold;
+}
+
+.grey-sm-text {
+    color: #969191;
+    font-size: smaller;
+}
