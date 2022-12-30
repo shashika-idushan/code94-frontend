@@ -21,6 +21,11 @@ function AddNewProductPage() {
         }
     }, [user, navigate, dispatch])
 
+    useEffect(() => {
+        if (isSuccess) { 
+            navigate('/')
+        } 
+    }, [isSuccess])
 
     const [sku, setSku] = useState();
     const [price, setPrice] = useState();
