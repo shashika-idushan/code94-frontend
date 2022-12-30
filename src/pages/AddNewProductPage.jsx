@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
 import { addProduct, reset } from "../features/products/productSlice";
 import sampleImage from "../assets/sample-image.png"
 
@@ -22,17 +21,6 @@ function AddNewProductPage() {
         }
     }, [user, navigate, dispatch])
 
-    useEffect(() => {
-        if (isSuccess) { 
-            navigate('/')
-        } 
-    }, [isSuccess])
-
-
-
-
-    // const [img1, setImg1] = useState(null);
-    const [imgString, setimgString] = useState();
 
     const [sku, setSku] = useState();
     const [price, setPrice] = useState();

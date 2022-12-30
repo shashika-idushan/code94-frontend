@@ -71,7 +71,7 @@ function ProductsPage() {
 
                 <div className="col-lg-4">
                     <div className=" p-2 row" style={{float:'right'}}>
-                        <button className="btn btn-blue mr-3" onClick={(e)=> navigate('/addNewProduct')} > New Product</button>
+                        <button className="btn btn-blue mr-3" onClick={()=> navigate('/addNewProduct')} > New Product</button>
                         <button className="btn icon-btn-blue" onClick={()=> navigate('/favouriteProducts')}><i class="fa fa-star"></i></button>
                     </div>
                 </div>
